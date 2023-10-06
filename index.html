@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-minimal.css">
+</head>
+<body>
+    
+    <style>
+        .chart-container{
+           height: 200px;
+           max-width: 1920px;
+           margin-top: 100px;  
+           margin-left: 10px;
+           
+        }
+        .roling-number {
+            font-size: 40px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+          .odometer{
+            font-size: 4rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgb(63, 63, 63);
+          }
+        .row{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .coll{
+            width: 500px;
+            margin: 20px;
+        }
+        .big-coll{
+            width: 550px;
+        }
+    </style>
+
+    <div class="chart-container">
+        <div class="row">
+            <div class="coll">
+                <div class="roling-number">
+                    <div class="odometer"></div>
+                </div>
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="coll">
+                <div class="roling-number">
+                    <div class="odometer" id="odometer"></div>
+                </div>
+                <canvas id="myChart2"></canvas>
+            </div>
+            <div class="coll big-coll">
+                <div class="roling-number">
+                    <div class="odometer" id="odometer"></div>
+                </div>
+                <canvas id="myChart3"></canvas>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="coll">
+                <div class="roling-number">
+                    <div class="odometer" id="odometer"></div>
+                </div>
+                <canvas id="myChart4"></canvas>
+            </div>
+            <div class="coll">
+                <div class="roling-number">
+                    <div class="odometer" id="odometer"></div>
+                </div>
+                <canvas id="myChart5"></canvas>
+            </div>
+        </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js" integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"> </script>
+
+
+
+</body>
+</html>
