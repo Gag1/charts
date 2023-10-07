@@ -42,25 +42,34 @@
         .big-coll{
             width: 550px;
         }
+        .roling-number h4{
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgb(63, 63, 63);
+            font-size: 30px;
+        }
     </style>
 
     <div class="chart-container">
         <div class="row">
             <div class="coll">
                 <div class="roling-number">
-                    <div class="odometer"></div>
+                    <h4>Motor Vehicle Fatalities</h4>
+
+                    <div class="odometer fatalities" ></div>
                 </div>
                 <canvas id="myChart"></canvas>
             </div>
             <div class="coll">
                 <div class="roling-number">
-                    <div class="odometer" id="odometer"></div>
+                     <h4>Current Injuries</h4>
+                    <div class="odometer injuries" id="odometer"></div>
                 </div>
                 <canvas id="myChart2"></canvas>
             </div>
             <div class="coll big-coll">
                 <div class="roling-number">
-                    <div class="odometer" id="odometer"></div>
+                    <h4 >Current Accidents </h4>
+                    <div class="odometer crashesTotal" id="odometer"></div>
                 </div>
                 <canvas id="myChart3"></canvas>
             </div>
@@ -69,13 +78,17 @@
         <div class="row">
             <div class="coll">
                 <div class="roling-number">
-                    <div class="odometer" id="odometer"></div>
+                    <h4> Soon ! </h4>
+
+                    <div class="odometer a1" id="odometer"></div>
                 </div>
                 <canvas id="myChart4"></canvas>
             </div>
             <div class="coll">
                 <div class="roling-number">
-                    <div class="odometer" id="odometer"></div>
+                    <h4 >Soon ! </h4>
+           
+                    <div class="odometer a2" id="odometer"></div>
                 </div>
                 <canvas id="myChart5"></canvas>
             </div>
